@@ -1,0 +1,15 @@
+.theme-light {
+  --primary-color: #f0f0f0;
+  --secondary-color: #ddd;
+  --accent-color: #007bff;
+  --text-color: #111;
+  --bg-gradient: linear-gradient(135deg, #fff, #ccc);
+}
+
+.theme-galaxy {
+  --primary-color: #000011;
+  --secondary-color: #220033;
+  --accent-color: #a020f0;
+  --text-color: #fff;
+  --bg-gradient: radial-gradient(circle at center, #1a0033, #000011);
+}

@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #1e1e2f;
+  --secondary-color: #333;
+  --accent-color: #09f;
+  --text-color: #fff;
+  --border-radius: 12px;
+  --bg-gradient: linear-gradient(135deg, #1e1e2f, #3a3a5d);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--secondary-color);
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 1em;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+ul#feedback-list {
+  list-style: none;
+  padding: 0;
+}
+
+li.feedback-item {
+  background: #2c2c40;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: limegreen;
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px;
+}
+
+#theme-toggle {
+  right: 80px;
+}
+
+.notif-container {
+  position: relative;
+}
+
+#notif-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+#notif-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  display: none;
+}
