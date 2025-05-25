@@ -1,0 +1,209 @@
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a8a8a8;
+    --text-color: #f8f9fa;
+    --bg-color: #2d3436;
+    --card-bg: #3a3f44;
+    --border-color: #4e555b;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Light Theme (default) */
+[data-theme="light"] {
+    --primary-color: #4a6bff;
+    --secondary-color: #6c757d;
+    --text-color: #212529;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Galaxy Theme */
+[data-theme="galaxy"] {
+    --primary-color: #9c88ff;
+    --secondary-color: #c8d6e5;
+    --text-color: #f5f6fa;
+    --bg-color: #192a56;
+    --card-bg: #273c75;
+    --border-color: #40739e;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-color: rgba(156, 136, 255, 0.1);
+}
+
+/* Sun Theme */
+[data-theme="sun"] {
+    --primary-color: #f39c12;
+    --secondary-color: #d35400;
+    --text-color: #2c3e50;
+    --bg-color: #f1c40f;
+    --card-bg: #f5d76e;
+    --border-color: #e67e22;
+    --shadow-color: rgba(230, 126, 34, 0.3);
+    --hover-color: rgba(243, 156, 18, 0.2);
+}
+
+/* Moon Theme */
+[data-theme="moon"] {
+    --primary-color: #c8d6e5;
+    --secondary-color: #8395a7;
+    --text-color: #f5f6fa;
+    --bg-color: #222f3e;
+    --card-bg: #1e272e;
+    --border-color: #576574;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --hover-color: rgba(200, 214, 229, 0.1);
+}
+
+/* Winter Theme */
+[data-theme="winter"] {
+    --primary-color: #74b9ff;
+    --secondary-color: #0984e3;
+    --text-color: #2d3436;
+    --bg-color: #dfe6e9;
+    --card-bg: #ffffff;
+    --border-color: #b2bec3;
+    --shadow-color: rgba(116, 185, 255, 0.3);
+    --hover-color: rgba(116, 185, 255, 0.1);
+}
+
+/* Spring Theme */
+[data-theme="spring"] {
+    --primary-color: #00b894;
+    --secondary-color: #55efc4;
+    --text-color: #2d3436;
+    --bg-color: #fdcb6e;
+    --card-bg: #ffeaa7;
+    --border-color: #00b894;
+    --shadow-color: rgba(0, 184, 148, 0.3);
+    --hover-color: rgba(0, 184, 148, 0.1);
+}
+
+/* Summer Theme */
+[data-theme="summer"] {
+    --primary-color: #e17055;
+    --secondary-color: #fab1a0;
+    --text-color: #2d3436;
+    --bg-color: #ffeaa7;
+    --card-bg: #fdcb6e;
+    --border-color: #e17055;
+    --shadow-color: rgba(225, 112, 85, 0.3);
+    --hover-color: rgba(225, 112, 85, 0.1);
+}
+
+/* Autumn Theme */
+[data-theme="autumn"] {
+    --primary-color: #e84393;
+    --secondary-color: #fd79a8;
+    --text-color: #2d3436;
+    --bg-color: #ffeaa7;
+    --card-bg: #fdcb6e;
+    --border-color: #e84393;
+    --shadow-color: rgba(232, 67, 147, 0.3);
+    --hover-color: rgba(232, 67, 147, 0.1);
+}
+
+/* Stars Theme */
+[data-theme="stars"] {
+    --primary-color: #fdcb6e;
+    --secondary-color: #ffeaa7;
+    --text-color: #f5f6fa;
+    --bg-color: #2d3436;
+    --card-bg: #3a3f44;
+    --border-color: #fdcb6e;
+    --shadow-color: rgba(253, 203, 110, 0.3);
+    --hover-color: rgba(253, 203, 110, 0.1);
+}
+
+/* Background Animations */
+[data-theme="galaxy"] .background-animation {
+    background: radial-gradient(circle at center, #192a56 0%, #000 100%);
+    animation: galaxy 30s infinite linear;
+}
+
+[data-theme="stars"] .background-animation {
+    background: #000 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="20" cy="20" r="1" fill="white"/><circle cx="60" cy="80" r="1" fill="white"/><circle cx="120" cy="40" r="1" fill="white"/><circle cx="180" cy="100" r="1" fill="white"/><circle cx="40" cy="160" r="1" fill="white"/><circle cx="100" cy="120" r="1" fill="white"/><circle cx="160" cy="180" r="1" fill="white"/><circle cx="80" cy="20" r="1" fill="white"/><circle cx="140" cy="60" r="1" fill="white"/><circle cx="20" cy="140" r="1" fill="white"/></svg>');
+    animation: stars 100s infinite linear;
+}
+
+[data-theme="sun"] .background-animation {
+    background: radial-gradient(circle at center, #f1c40f 0%, #f39c12 100%);
+    animation: sunPulse 10s infinite alternate;
+}
+
+[data-theme="moon"] .background-animation {
+    background: radial-gradient(circle at center, #2d3436 0%, #000 100%);
+    animation: moonGlow 15s infinite alternate;
+}
+
+[data-theme="winter"] .background-animation {
+    background: linear-gradient(135deg, #dfe6e9 0%, #74b9ff 100%);
+    animation: winterWind 20s infinite linear;
+}
+
+[data-theme="spring"] .background-animation {
+    background: linear-gradient(135deg, #fdcb6e 0%, #00b894 100%);
+    animation: springBloom 20s infinite alternate;
+}
+
+[data-theme="summer"] .background-animation {
+    background: linear-gradient(135deg, #ffeaa7 0%, #e17055 100%);
+    animation: summerHeat 15s infinite alternate;
+}
+
+[data-theme="autumn"] .background-animation {
+    background: linear-gradient(135deg, #fdcb6e 0%, #e84393 100%);
+    animation: autumnLeaves 20s infinite alternate;
+}
+
+[data-theme="dark"] .background-animation {
+    background: linear-gradient(135deg, #2d3436 0%, #000 100%);
+}
+
+[data-theme="light"] .background-animation {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+@keyframes galaxy {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes stars {
+    0% { background-position: 0 0; }
+    100% { background-position: -2000px 2000px; }
+}
+
+@keyframes sunPulse {
+    0% { opacity: 0.05; }
+    100% { opacity: 0.15; }
+}
+
+@keyframes moonGlow {
+    0% { opacity: 0.05; }
+    100% { opacity: 0.15; }
+}
+
+@keyframes winterWind {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 1000px; }
+}
+
+@keyframes springBloom {
+    0% { background-position: 0 0; opacity: 0.05; }
+    100% { background-position: 1000px 1000px; opacity: 0.15; }
+}
+
+@keyframes summerHeat {
+    0% { opacity: 0.05; }
+    100% { opacity: 0.15; }
+}
+
+@keyframes autumnLeaves {
+    0% { background-position: 0 0; opacity: 0.05; }
+    100% { background-position: 1000px 1000px; opacity: 0.15; }
+}
